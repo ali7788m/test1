@@ -39,91 +39,78 @@
 
     </div>
   </nav>
-
-  <main class="page registration-page">
+  <!-- فرم ثبت‌نام -->
+  <main class="page signup-page">
     <section class="clean-block clean-form dark">
       <div class="container">
         <div class="block-heading">
-          <h2 class="text-info">
-            <i class="fa fa-user-circle fa-1x" aria-hidden="true"></i>
-            Registration
-          </h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
+          <h2 class="text-info">ثبت‌نام</h2>
+          <p>لطفاً اطلاعات خود را وارد کنید.</p>
         </div>
-
-        <!-- فرم با id -->
         <form id="signupForm">
           <div class="mb-3">
-            <label class="form-label" for="name">Name</label>
-            <input class="form-control item" type="text" id="name"
-              placeholder="Enter your Name" required minlength="3"
-              title="Name should consist of more than 2 characters"/>
+            <label class="form-label" for="name">نام</label>
+            <input class="form-control" type="text" id="name" name="name" required>
           </div>
-
           <div class="mb-3">
-            <label class="form-label" for="password">Password</label>
-            <input class="form-control item" type="password" id="password"
-              placeholder="Enter your Password" required
-              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
-              title="Passwords must be at least 8 characters in length with a minimum of 1 lower case letter, 1 upper case letter, 1 numeric character and 1 special character"/>
+            <label class="form-label" for="email">ایمیل</label>
+            <input class="form-control" type="email" id="email" name="email" required>
           </div>
-
           <div class="mb-3">
-            <label class="form-label" for="email">Email</label>
-            <input class="form-control item" type="text" id="email"
-              placeholder="Enter your Email Address" required
-              pattern="[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+"
-              title="Please enter a valid email address"/>
+            <label class="form-label" for="password">رمز عبور</label>
+            <input class="form-control" type="password" id="password" name="password" required>
           </div>
-
-          <button class="btn btn-primary" type="submit">Sign Up</button>
-          <hr />
+          <div class="mb-3">
+            <button class="btn btn-primary" type="submit">ثبت‌نام</button>
+          </div>
           <div>
-            If you have an account <a href="login.html"> login here</a>
+            <a href="login.html">ورود به حساب کاربری</a>
           </div>
         </form>
       </div>
     </section>
   </main>
-<footer class="page-footer dark">
+
+  <!-- فوتر -->
+  <footer class="page-footer dark">
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
-          <h5>Get started</h5>
+          <h5>شروع کنید</h5>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sign up</a></li>
-            <li><a href="#">Downloads</a></li>
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">ثبت‌نام</a></li>
+            <li><a href="#">دانلودها</a></li>
           </ul>
         </div>
         <div class="col-sm-3">
-          <h5>About us</h5>
+          <h5>درباره ما</h5>
           <ul>
-            <li><a href="#">Company Information</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Reviews</a></li>
+            <li><a href="#">اطلاعات شرکت</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">نظرات</a></li>
           </ul>
         </div>
         <div class="col-sm-3">
-          <h5>Support</h5>
+          <h5>پشتیبانی</h5>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Help desk</a></li>
-            <li><a href="#">Forums</a></li>
+            <li><a href="#">سؤالات متداول</a></li>
+            <li><a href="#">میز کمک</a></li>
+            <li><a href="#">انجمن‌ها</a></li>
           </ul>
         </div>
         <div class="col-sm-3">
-          <h5>Legal</h5>
+          <h5>قوانین</h5>
           <ul>
-            <li><a href="#">Terms of Service</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">شرایط خدمات</a></li>
+            <li><a href="#">شرایط استفاده</a></li>
+            <li><a href="#">سیاست حفظ حریم خصوصی</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
-      <p>© 2021 Copyright Text</p>
+      <p>© 2025 پشتیبان دیجیتال</p>
     </div>
   </footer>
 
@@ -132,7 +119,7 @@
   <script src="assets/js/vanilla-zoom.js"></script>
   <script src="assets/js/theme.js"></script>
 
-  <!-- اسکریپت اضافه شده -->
+  <!-- اسکریپت انتقال به صفحه موفقیت -->
   <script>
     document.getElementById("signupForm").addEventListener("submit", function(e) {
       e.preventDefault(); // جلوگیری از ارسال واقعی فرم

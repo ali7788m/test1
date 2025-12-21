@@ -2,7 +2,7 @@
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
-  <title>تماس با ما</title>
+  <title>پیام ارسال شد</title>
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 </head>
 <body>
@@ -25,36 +25,12 @@
     </div>
   </nav>
 
-  <!-- Contact Form -->
+  <!-- Success Message -->
   <main class="page contact-us-page">
     <section class="clean-block clean-form dark">
-      <div class="container">
-        <div class="block-heading">
-          <h2 class="text-info">تماس با ما</h2>
-          <p>لطفاً فرم زیر را پر کنید.</p>
-        </div>
-        <!-- فرم بدون پردازش PHP -->
-        <form action="contact-success.html" method="GET">
-          <div class="mb-3">
-            <label class="form-label" for="name">نام</label>
-            <input class="form-control" type="text" id="name" name="name" required />
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="subject">موضوع</label>
-            <input class="form-control" type="text" id="subject" name="subject" required />
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="email">ایمیل</label>
-            <input class="form-control" type="email" id="email" name="email" required />
-          </div>
-          <div class="mb-3">
-            <label class="form-label" for="message">پیام</label>
-            <textarea class="form-control" id="message" name="message" required></textarea>
-          </div>
-          <div class="mb-3">
-            <button class="btn btn-primary" type="submit">ارسال پیام</button>
-          </div>
-        </form>
+      <div class="container text-center mt-5">
+        <h2 class="text-success">✅ پیام شما با موفقیت به مدیر ارسال شد</h2>
+        <a href="index.html" class="btn btn-info mt-3">بازگشت به صفحه اصلی</a>
       </div>
     </section>
   </main>

@@ -14,51 +14,32 @@
   <link rel="stylesheet" href="assets/css/Projects-Horizontal.css" />
   <link rel="stylesheet" href="assets/css/Team-Boxed.css" />
   <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css" />
-
 </head>
 
 <body>
-  <nav class="
-        navbar navbar-light navbar-expand-lg
-        fixed-top
-        bg-white
-        clean-navbar
-      ">
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
     <div class="container">
-      <a class="navbar-brand logo" href="#">Digital Support</a><button data-bs-toggle="collapse" class="navbar-toggler"
-        data-bs-target="#navcol-1">
-        <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+
+      <a class="navbar-brand logo" href="#">پشتیبان دیجیتال</a>
+      <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navcol-1">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">خانه</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="features.html">ویژگی ها</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">پروژه ها</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pricing.html">قیمت ها</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-us.html">درباره ما</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact-us.html">تماس با ما</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="registration.html">ثبت نام</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login.html">ورود</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">خانه</a></li>
+          <li class="nav-item"><a class="nav-link active" href="features.html">ویژکی ها</a></li>
+          <li class="nav-item"><a class="nav-link active" href="pricing.html">قیمت ها</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">پروژه ها</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about-us.html">درباره ما</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact-us.html">تماس باما </a></li>
+          <li class="nav-item"><a class="nav-link active" href="registration.html">ثبت نام</a></li>
+        </ul>
+      </div>
+
     </div>
   </nav>
+
   <main class="page registration-page">
     <section class="clean-block clean-form dark">
       <div class="container">
@@ -67,27 +48,34 @@
             <i class="fa fa-user-circle fa-1x" aria-hidden="true"></i>
             Registration
           </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam
-            urna, dignissim nec auctor in, mattis vitae leo.
-          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam urna, dignissim nec auctor in, mattis vitae leo.</p>
         </div>
-        <form onclick="return validate()">
+
+        <!-- فرم با id -->
+        <form id="signupForm">
           <div class="mb-3">
-            <label class="form-label" for="name">Name</label><input class="form-control item" type="text" id="name"
-              placeholder="Enter your Name" required="" value="" minlength="3" title="Name should consist of more than 2 characters"/>
+            <label class="form-label" for="name">Name</label>
+            <input class="form-control item" type="text" id="name"
+              placeholder="Enter your Name" required minlength="3"
+              title="Name should consist of more than 2 characters"/>
           </div>
+
           <div class="mb-3">
-            <label class="form-label" for="password">Password</label><input class="form-control item" type="password"
-              id="password" placeholder="Enter your Password" required="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$" value="" title="Passwords must be at least 8 characters in
-              length with a minimum of 1 lower case letter, 1 upper case letter, 1 numeric character and 1 special
-              character" />
-            </div>
-          
-          <div class="mb-3">
-            <label class="form-label" for="email">Email</label><input class="form-control item" type="text" id="email"
-              placeholder="Enter your Email Address" required="" pattern="[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+" value="" title="Please enter a valid email address"/>
+            <label class="form-label" for="password">Password</label>
+            <input class="form-control item" type="password" id="password"
+              placeholder="Enter your Password" required
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,12}$"
+              title="Passwords must be at least 8 characters in length with a minimum of 1 lower case letter, 1 upper case letter, 1 numeric character and 1 special character"/>
           </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-control item" type="text" id="email"
+              placeholder="Enter your Email Address" required
+              pattern="[a-zA-Z0-9][a-zA-Z0-9._]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+"
+              title="Please enter a valid email address"/>
+          </div>
+
           <button class="btn btn-primary" type="submit">Sign Up</button>
           <hr />
           <div>
@@ -97,7 +85,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer dark">
+<footer class="page-footer dark">
     <div class="container">
       <div class="row">
         <div class="col-sm-3">
@@ -138,10 +126,18 @@
       <p>© 2021 Copyright Text</p>
     </div>
   </footer>
+
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
   <script src="assets/js/vanilla-zoom.js"></script>
   <script src="assets/js/theme.js"></script>
-</body>
 
+  <!-- اسکریپت اضافه شده -->
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function(e) {
+      e.preventDefault(); // جلوگیری از ارسال واقعی فرم
+      window.location.href = "success.html"; // انتقال به صفحه موفقیت
+    });
+  </script>
+</body>
 </html>

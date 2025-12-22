@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>پرداخت پلن پایه</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+  <div class="container mt-5">
+    <div class="card shadow">
+      <div class="card-header bg-primary text-white">
+        <h4>پرداخت پلن پایه</h4>
+      </div>
+      <div class="card-body">
+        <p>شما پلن <strong>پایه</strong> را انتخاب کرده‌اید.</p>
+        <p>مبلغ قابل پرداخت: <strong>۲۵ دلار</strong></p>
+        <form action="https://example-payment-gateway.com/pay" method="POST">
+          <!-- اینجا باید اطلاعات درگاه واقعی قرار بگیرد -->
+          <input type="hidden" name="plan" value="basic">
+          <input type="hidden" name="amount" value="25">
+          <button type="submit" class="btn btn-success">پرداخت</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
